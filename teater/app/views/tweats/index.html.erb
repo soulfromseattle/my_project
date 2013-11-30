@@ -1,0 +1,9 @@
+<h1>Tweats#index</h1>
+<% @tweaters.each do |tweater| %>
+  <div>
+     <%= tweater.body %>
+  -  <%= tweater.created_at %>
+  by <strong><%= tweater.author %></stong>
+  </div>
+<% end %>
+<%= link_to "Post a Tweet", new_tweet_path %>
